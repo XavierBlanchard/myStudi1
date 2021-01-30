@@ -1,10 +1,15 @@
 header {
     height: 200px;
-    background-color: cadetblue;
- }
+    background-color: whitesmoke;
+    text-align: center;
+}
 
-.logo, .badge {
-    background-color: coral;
+.h1 {
+    text-align: left;
+}
+
+.logo {
+    background-color: whitesmoke;
 }
 
 nav {
@@ -27,6 +32,6 @@ aside {
 }
 
 footer {
-    height: 200px;
-    background-color: cadetblue;
+    height: 100px;
+    background-color: whitesmoke;
 }
