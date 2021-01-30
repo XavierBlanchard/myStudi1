@@ -5,3 +5,4 @@ Créer un site web avec HTML, CSS et Bootstrap
 30/01/2021 => Add index.html & style.css
 30/01/2021 => Add Bootstrap-4.5.3
 30/01/2021 => Add des meta dans le header
+30/01/2021 => Add navbar
