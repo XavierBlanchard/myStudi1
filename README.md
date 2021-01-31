@@ -13,3 +13,5 @@ Créer un site web avec HTML, CSS et Bootstrap
 31/01/2021 => Remplissage des données de la page joinus.html
 31/01/2021 => Remplissage des données de la page index.hmtl
 31/01/2021 => Remplissage des données de la page temoin.hmtl
+31/01/2021 => Ajout du collapse dans les témoignages afin de limiter la taille des cards
+31/01/2021 => Personalisation des images et adapatation de leur taille en CSS

@@ -21,18 +21,9 @@ nav {
     height: 100%;
 }
 
-aside {
-    height: auto;
-    background-color: lightslategray;
-}
-
-.article1, .article2, .article3 {
-    height: 200px;
-    background-color: deeppink;
-}
-.article4 {
-    height: 400px;
-    background-color: greenyellow ;
+img {
+    max-height: 200px;
+    width: auto;
 }
 
 footer {
