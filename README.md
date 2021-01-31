@@ -7,3 +7,4 @@ Créer un site web avec HTML, CSS et Bootstrap
 30/01/2021 => Add des meta dans le header
 30/01/2021 => Add navbar
 30/01/2021 => Mise en forme du Header
+31/01/2021 => Modification des propriétés CSS du navbar (height : auto;)

@@ -5,7 +5,7 @@ header {
 }
 
 .h1 {
-    text-align: left;
+    text-align: center;
 }
 
 .logo {
@@ -13,8 +13,8 @@ header {
 }
 
 nav {
-    height: 80px;
-    background-color: darkgoldenrod;
+    height: auto;
+    background-color: whitesmoke;
 }
 
 aside {
