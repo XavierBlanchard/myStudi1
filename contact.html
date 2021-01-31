@@ -69,11 +69,11 @@
         </div>
         <section>
             <h3>Les contacts utiles :</h3>
-            <div class="row">
-                <article class="col-6">
+            <div class="row row-cols-1 row-cols-sm-2">
+                <article class="col-p-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Contact national :</h5>
+                            <h5 class="card-title"><u>Contact national :</u></h5>
                             <p class="card-text">
                                 <a href="tel:+33969394020">
                                     <img src="images/numero_cristal.png" style="width: 100%;max-height: 100%">
@@ -85,11 +85,11 @@
                         </div>
                     </div>
                 </article>
-                <article class="col-6">
+                <article class="col-p-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Contact départemental :</h5>
-                            <p class="card-text"> Téléphones :<br><br>
+                            <h5 class="card-title"><u>Contact départemental :</u></h5>
+                            <p class="card-text">
                                 Agence départementale : <a href="tel:+33243248840">
                                     02 43 24 88 40
                                 </a><br><br>
@@ -108,30 +108,33 @@
                 </article>
             </div>
             <h3>Formulaire de contact par mail :</h3>
-            <form>
+            <form class="needs-validation" novalidate> 
                 <div class="form-group">
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="nom">Nom</label>
-                            <input id="nom" class="form-control" type="text" name="" placeholder="Entrer votre nom">
+                            <label for="prenom">Prénom *</label>
+                            <input id="prenom" class="form-control" type="text" name=""
+                                placeholder="Entrer votre prénom" required>
+                                <div class="invalid-feedback">Merci d'indiquer votre prénom.</div>
                         </div>
                         <div class="col-md-6">
-                            <label for="prenom">Prénom</label>
-                            <input id="prenom" class="form-control" type="text" name=""
-                                placeholder="Entrer votre prénom">
+                            <label for="nom">Nom</label>
+                            <input id="nom" class="form-control" type="text" name="" placeholder="Entrer votre nom">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="mail">Mail</label>
-                            <input id="mail" class="form-control" type="text" name="" placeholder="Entrer votre mail">
+                            <label for="mail">Mail *</label>
+                            <input id="mail" class="form-control" type="text" name="" placeholder="Entrer votre mail" required>
+                            <div class="invalid-feedback">Merci d'indiquer un email valide pour être recontacté.</div>
                         </div>
                         <div class="col-md-6">
-                            <label for="numéro">Numéro</label>
+                            <label for="numéro">Téléphone *</label>
                             <input id="numéro" class="form-control" type="text" name=""
-                                placeholder="Entrer votre numéro">
+                                placeholder="Entrer votre numéro au format 01 23 45 67 89" required>
+                                <div class="invalid-feedback">Merci d'indiquer un téléphone valide pour être recontacté.</div>
                         </div>
                     </div>
                 </div>
@@ -141,6 +144,16 @@
                             <label for="adresse">Adresse</label>
                             <input id="adresse" class="form-control" type="text" name=""
                                 placeholder="Entrer votre adresse">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="message">Message *</label>
+                            <input id="message" class="form-control" type="text" name=""
+                                placeholder="Entrer votre message" required>
+                            <div class="invalid-feedback">Merci d'indiquer la raison de votre contact.</div>
                         </div>
                     </div>
                 </div>
@@ -157,17 +170,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-primary">S'inscrire</button>
+                <button class="btn btn-primary" type="submit">Envoyer la demande de contact</button>
             </form>
-
-
-
-
-
-
-
-
-
         </section>
         <footer class="row justify-content-center align-items-center">
             <p class="text-center">Tout droit réservé<br>
@@ -185,6 +189,27 @@
 
     <!-- Our JavaScript -->
     <script src="./script.js"></script>
+
+    <script>
+        /*La fonction principale de ce script est d'empêcher l'envoi du formulaire si un champ a été mal rempli
+         *et d'appliquer les styles de validation aux différents éléments de formulaire*/
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            let forms = document.getElementsByClassName('needs-validation');
+            let validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+      </script>
+
 </body>
 
 </html>
