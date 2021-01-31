@@ -17,6 +17,10 @@ nav {
     background-color: whitesmoke;
 }
 
+.card {
+    height: 100%;
+}
+
 aside {
     height: auto;
     background-color: lightslategray;
