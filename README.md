@@ -10,4 +10,5 @@ Créer un site web avec HTML, CSS et Bootstrap
 31/01/2021 => Modification des propriétés CSS du navbar (height : auto;)
 31/01/2021 => Ajout de la page contact intégrant les coordonnées et un formulaire de contact
 31/01/2021 => Ajout des vérifications de champs obligatoires dans le formulaire de contact
-31/01/2021 => Remplissage des données de la page Nous Rejoindre
+31/01/2021 => Remplissage des données de la page joinus.html
+31/01/2021 => Remplissage des données de la page index.hmtl
